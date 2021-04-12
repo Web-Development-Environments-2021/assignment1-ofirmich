@@ -1,308 +1,295 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>Ruth and Moshe Sidi</title>
-<meta carset="UTF-8">
+<title>RM SIDI</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="lib/css/emoji.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="/css/style.css"> -->
 <link rel="icon" href="favicon.ico">
-</head>
 
+<style>
+
+
+</style>
+</head>
 <body>
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="mp6KBW7k"></script>
 
 <!-- Navbar (sit on top) -->
-  <!-- <div id="myNavbar"  > -->
-    <div class="bar"  id="myNavbar">
-      <ul >
-        <li> <a href="#logo"> <i class="fa fa-home"></i> Home </a></li>
-        <li> <a href="#about"><i class="fa fa-user"></i> About Us </a></li>
-        <li> <a href="#logo2"><i class="fa fa-camera-retro"></i> My Photos </a></li>
-        <li> <a href="#playlist"><i class="fa fa-music"></i> My Playlist </a></li>
-        <li> <a href="#like"><i class="fa fa-thumbs-up"></i> Like </a></li>
-        <li> <a href="#qrcoder"><i class="fa fa-qrcode"></i> QR code </a></li>
-        <li> <a href="#spa"><i class="fa fa-question"></i> Q&A </a></li>
-        <li> <a href="#logo3"><i class="fa fa-envelope"></i> Contact Me </a></li>
-        <img src="https://lh3.googleusercontent.com/JCSMjaCKjRJaUyG2TUVYulMpNENIaABI8dtsN88zHLadXepZVaCcAPso616MDcCrPacWuV3hwJvvT55dxvJltiNoNRda-wgkupbMLM_px8gSsly69ALjniS_ukwBruI0DzfuQytAkTM=w2400"  id="barPic" />
-      </ul>
-  </div>
-<!-- </div> -->
+<div class="w3-top">
+  <div class="w3-bar " id="myNavbar"  >
 
-<!-- first logo -->
-<div id="logo">
-    <div class="inner-text" >Ruth and Moshe Sidi</div>
+    <a class="w3-bar-item w3-button w3-white w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-camera-retro"></i> MY PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    <a href="#playlist" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-music"></i> MY PLAYLIST</a>
+<a href="#like"class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-thumbs-up"></i> LIKE</a>
+        <a href="#qrcoder"class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-qrcode"></i> QR CODE</a>
+        <a href="#spa"class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-question"></i> Q&A</a>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+      <a href="#playlist"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Playlist</a>		
+      <a href="#like"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Like</a>
+      <a href="#qrcoder"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">QR code</a>
+      <a href="#spa"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Q&A</a>
+      <a href="#contact"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact Me</a>
+    
   </div>
 </div>
-<hr>
 
-<!-- About Section -->
-<div class="section" id="about">
-  <h3 class="headline">ABOUT ME</h3>
-  <p class="paragraph"><em>I love photography</em></p>
-  
-  <p>This website was created for my beloved grandpa and grandma, which I love so much. for me they are inspiration for friendship and true love.</p>
-  
-    <div class="w3-row">
-    <div id="about2">
-      <img src="https://lh3.googleusercontent.com/0ikAefN49m9APFo0w41gT9P2okn4AVPpi-QXrHRqCAofc5Y65Zumy90sOHrW7RZc1sF8v0h-im7wuXcIfkq_xjdk4ZGeBCkqeelz7TpPTXU0OgrQhzQpyvkXn6GKEK7tojB6PCajLS4=w2400" class="photos" alt="Photo of Us" width="500" height="340">
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Ruth <span class="w3-hide-small">and</span> Moshe</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I love photography</em></p>
+  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="https://lh3.googleusercontent.com/0ikAefN49m9APFo0w41gT9P2okn4AVPpi-QXrHRqCAofc5Y65Zumy90sOHrW7RZc1sF8v0h-im7wuXcIfkq_xjdk4ZGeBCkqeelz7TpPTXU0OgrQhzQpyvkXn6GKEK7tojB6PCajLS4=w2400" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
-    <hr>
-
-    <div id="about2">
-      <p>Moshe and Ruth sidi born in 1948 in Israel, they met in 1962, in the army, when they serve at the same base, and fell in love immidiatly.<br>
-        They lived in Rishon Lezion for two years until their first son, Adi, was born. After that they moved to the Moshav (settlement). Later on Inbar, my mother and Hen were born and raised there too.
-       </p>
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
   </div>
 
-<!-- 
+
+
   <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p> -->
-</br>
-  <div class="row">
-    <div class="column">
-      <iframe src="https://player.vimeo.com/video/531709272?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300"  height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="bidud.mp4"></iframe>
-    </div>
-    <div class="column">
-      <iframe src="https://player.vimeo.com/video/532557060?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300"  height="300" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="after surgery.mp4"></iframe>
-    </div>
-  </div>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <iframe src="https://player.vimeo.com/video/531709272?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="360" height="640" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="20200320_113739.mp4"></iframe>
 
-  <!-- <div>
-  <iframe src="https://player.vimeo.com/video/531709272?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="360" height="640" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="bidud.mp4"></iframe>
-  <iframe src="https://player.vimeo.com/video/532557060?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="352" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="after surgery.mp4"></iframe>
-  </div> -->
 </div>
 
-<br />
-<br />
-<br />
-<!-- go back here!!!!!!-->
-<div class="w3-row w3-center w3-padding-16" id="numbers" >  
-  <div class="numbers-text">
-    <span>3</span><br>
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">3</span><br>
     Children
   </div>
-  <div class="numbers-text">
-    <span>8</span><br>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">8</span><br>
     Grandchildren
   </div>
-  <div class="numbers-text">
-    <span>40+</span><br>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
     Good Friends
   </div>
-  <div class="numbers-text">
-    <span>60+</span><br>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
     Countries
   </div>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-  <div id="logo2">
-    <div id="inner-text2">Photos</div>
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
- <div class="section" id="photos"> 
-  <h3 class="inner-headline">Our Album</h3>
-  <!-- <p class="w3-center"><em>Here are some of our photos<br> Click on the images to make them bigger <i class="fa fa-expand"></i> </em></p><br> -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <!-- <div class="w3-row-padding w3-center "> -->
-    <!-- <div>
-      <img src="https://lh3.googleusercontent.com/OVZWRWYzZXcfszska9cjEMbyIA0VMReDetNhwZleOW63qtDnSCXT2eDQ7QUcpJhb0n4o3s0phgBrIICsHaImxWbF0oYKGtNzy2m-ctkO5d4Bom63Z94UdtaV6wIH9UwAL00ZUbPsFn4=w2400" style="width:100%" onclick="onClick(this)" class="small-photos" alt="dani and helena">
-      <img src="https://lh3.googleusercontent.com/naad6eGGe2Qhb2Pd-r9BqnB2KuyvQ94cidLwOb1PjaxNwnJvFQNYbmk6CFwa0VDlV4_x3Q4NMnNc-6oh9r-RDT18ZxV9wie55hLYY6ZVoMkgdMtUxHqFk0-nHXugW2EaI04xJzhnBZI=w2400" style="width:100%" onclick="onClick(this)" class="small-photos" alt="nisim">
-      <img src="https://lh3.googleusercontent.com/Pv33isp2FUbwvYuzFFlDocehiNe-VVsb_9wkyiohv-qg-ACNmaxE-DmS_sCSG9q68yCRhbhut4d_yZXc8FvS5ypuaB9VQOdflieZKq0oj9XDMgMPHSP9elbYchSSA35_UEGLlrnoVvE=w2400" style="width:100%" onclick="onClick(this)" class="small-photos" alt="trip1">
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="https://lh3.googleusercontent.com/OVZWRWYzZXcfszska9cjEMbyIA0VMReDetNhwZleOW63qtDnSCXT2eDQ7QUcpJhb0n4o3s0phgBrIICsHaImxWbF0oYKGtNzy2m-ctkO5d4Bom63Z94UdtaV6wIH9UwAL00ZUbPsFn4=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="dani and helena">
     </div>
 
     <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/YJeJtQcOBjhIt5PtqKfaj2s8fg5l2qV77vDboY1u6RpbyBeYkdziyWbIbz16hNQxIHt9pb6ltUe45oHqPahvg2lKKPMgbe4cDvherOs1yB8TwfcfTmP6laxJbCsEIchfAVHSz8Pyang=w2400" style="width:100%" onclick="onClick(this)" class="small-photos" alt="trip2">
+      <img src="https://lh3.googleusercontent.com/naad6eGGe2Qhb2Pd-r9BqnB2KuyvQ94cidLwOb1PjaxNwnJvFQNYbmk6CFwa0VDlV4_x3Q4NMnNc-6oh9r-RDT18ZxV9wie55hLYY6ZVoMkgdMtUxHqFk0-nHXugW2EaI04xJzhnBZI=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="nisim">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://lh3.googleusercontent.com/Pv33isp2FUbwvYuzFFlDocehiNe-VVsb_9wkyiohv-qg-ACNmaxE-DmS_sCSG9q68yCRhbhut4d_yZXc8FvS5ypuaB9VQOdflieZKq0oj9XDMgMPHSP9elbYchSSA35_UEGLlrnoVvE=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="trip1">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://lh3.googleusercontent.com/YJeJtQcOBjhIt5PtqKfaj2s8fg5l2qV77vDboY1u6RpbyBeYkdziyWbIbz16hNQxIHt9pb6ltUe45oHqPahvg2lKKPMgbe4cDvherOs1yB8TwfcfTmP6laxJbCsEIchfAVHSz8Pyang=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="trip2">
     </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/QhoKq5PWHfNbX4-K6QjWyJg2giuHVJJyUCqXd6hf8ryvLxdq6QztDBsf0JDuvT9mF2FSBzAY5lFDg9_qCUSFeeOA_gvPIHa48HLseKs7JNvTk1SVPEf-E2q2tO8ZAdIlOUqQzvd2ztQ=w2400" style="width:100%" onclick="onClick(this)" class="small-photos" alt="family">
+      <img src="https://lh3.googleusercontent.com/QhoKq5PWHfNbX4-K6QjWyJg2giuHVJJyUCqXd6hf8ryvLxdq6QztDBsf0JDuvT9mF2FSBzAY5lFDg9_qCUSFeeOA_gvPIHa48HLseKs7JNvTk1SVPEf-E2q2tO8ZAdIlOUqQzvd2ztQ=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="family">
     </div>
 
     <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/ZbA2q-E_ICtDe8-NuTxFQBDojUjEAH1J5W4gYh5KRlZ0Hq6MqM5Knbb-_c0HtHhaiBGHqwWNxX70WDNszQGRlfHITZDUsayoaeG_AuMjKe2tjow3ziTdb0RUV1Sa9iw9m7_L6BXyPeM=w2400" style="width:100%" onclick="onClick(this)" class="small-photos" >
+      <img src="https://lh3.googleusercontent.com/ZbA2q-E_ICtDe8-NuTxFQBDojUjEAH1J5W4gYh5KRlZ0Hq6MqM5Knbb-_c0HtHhaiBGHqwWNxX70WDNszQGRlfHITZDUsayoaeG_AuMjKe2tjow3ziTdb0RUV1Sa9iw9m7_L6BXyPeM=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
     </div>
 
     <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/cjlSPLBF5e5p_UGH3lw0AF4gcD95mc4IbacAF9C1OzLt7h7YO2ctp5YxhfQO_6TaptWH4NYPZpDoIYs5YgAoPPwkj5UbCQL_MGMJiUXlw0bkUCFK3PHHHg26C2QHQf558nzJmQUtt4s=w2400" style="width:100%" onclick="onClick(this)" class="small-photos" alt="Empty ghost train">
+      <img src="https://lh3.googleusercontent.com/cjlSPLBF5e5p_UGH3lw0AF4gcD95mc4IbacAF9C1OzLt7h7YO2ctp5YxhfQO_6TaptWH4NYPZpDoIYs5YgAoPPwkj5UbCQL_MGMJiUXlw0bkUCFK3PHHHg26C2QHQf558nzJmQUtt4s=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
     </div>
 
     <div class="w3-col m3">
-      <img src="https://lh3.googleusercontent.com/Xv9dOA5VDr5F9APcuk_NC6bbTrrCF7z5-_Up7b2M-grQFnHUOt8jNmVQd0CWtKMKKZeOxPnUko20LZeKUpynQNxWkl0PsA7gpRyXBPVv6t1q831KzcjztMBT8E7ASt65QWzM_w9HdHw=w2400" style="width:100%" onclick="onClick(this)" class="small-photos" alt="Sailing">
+      <img src="https://lh3.googleusercontent.com/Xv9dOA5VDr5F9APcuk_NC6bbTrrCF7z5-_Up7b2M-grQFnHUOt8jNmVQd0CWtKMKKZeOxPnUko20LZeKUpynQNxWkl0PsA7gpRyXBPVv6t1q831KzcjztMBT8E7ASt65QWzM_w9HdHw=w2400" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
     </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
 </div>
-
-<hr>  -->
-
-
-<!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-    <img src="https://lh3.googleusercontent.com/OVZWRWYzZXcfszska9cjEMbyIA0VMReDetNhwZleOW63qtDnSCXT2eDQ7QUcpJhb0n4o3s0phgBrIICsHaImxWbF0oYKGtNzy2m-ctkO5d4Bom63Z94UdtaV6wIH9UwAL00ZUbPsFn4=w2400" style="width:100%">
-    <div class="text">With Dani and Helena</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
-    <img src="https://lh3.googleusercontent.com/naad6eGGe2Qhb2Pd-r9BqnB2KuyvQ94cidLwOb1PjaxNwnJvFQNYbmk6CFwa0VDlV4_x3Q4NMnNc-6oh9r-RDT18ZxV9wie55hLYY6ZVoMkgdMtUxHqFk0-nHXugW2EaI04xJzhnBZI=w2400" style="width:100%">
-    <div class="text">With our children, Nisim and Savta Lea</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-    <img src="https://lh3.googleusercontent.com/Xv9dOA5VDr5F9APcuk_NC6bbTrrCF7z5-_Up7b2M-grQFnHUOt8jNmVQd0CWtKMKKZeOxPnUko20LZeKUpynQNxWkl0PsA7gpRyXBPVv6t1q831KzcjztMBT8E7ASt65QWzM_w9HdHw=w2400" style="width:100%">
-    <div class="text">With our friends</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-    <img src="https://lh3.googleusercontent.com/Xv9dOA5VDr5F9APcuk_NC6bbTrrCF7z5-_Up7b2M-grQFnHUOt8jNmVQd0CWtKMKKZeOxPnUko20LZeKUpynQNxWkl0PsA7gpRyXBPVv6t1q831KzcjztMBT8E7ASt65QWzM_w9HdHw=w2400" style="width:100%">
-    <div class="text">With our family</div>
-  </div>
-
-  
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-
-</div>
-<br/>
-<br/>
 
 
   <!-- playlist -->
-      <div class="middle-section" style="max-width:800px" id="playlist">
-         <h2 class="inner-headline">playlist</h2>
-         <div class="padding-large">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="playlist">
+         <h2 class="w3-wide w3-center">playlist</h2>
+         <div class="w3-padding-large w3-center">
            <iframe width="560" height="315" src="https://www.youtube.com/embed/pn_p5_8taxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
        </div>
   
-
-<!-- like -->
-      <div class="middle-section" style="max-width:800px" id="like">
-        <h2 class="inner-headline">Be nice and give us a like!</h2>
-        <div class="fb-like" data-href="https://web-development-environments-2021.github.io/assignment1-ofirmich/" 
-        data-width="" data-layout="button_count" data-action="like" 
-        data-size="large" data-share="true"></div>        
+      <hr>
+  
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="like">
+        <h2 class="w3-wide w3-center">Give us a like</h2>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>      </div>
   </div>
-    
+  
+      <hr>
+  
       <!-- qrcoder  -->
-      <div class="middle-section" style="max-width:800px" id="qrcoder">
-            <h2 class="inner-headline">QRcode</h2>
-            <div class="padding-large">
-                <img src="qrcode.png" alt="" width="200px" height="200px">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="qrcoder">
+            <h2 class="w3-wide w3-center">QRcode</h2>
+            <div class="w3-padding-large w3-center">
+                <img src="https://lh3.googleusercontent.com/hmK-w2OmyQ49KZYAXPuEERzWIXfixcAneTkkeBFTljZnhLJuf5vTW73Dtj-_hXE8cu82srm4A_G8Z7RazKHhUSHM66INZzJM-yoKQR4CFFxIUhUeYwXZ1N9Y4hHiBmfKhPtQD-ltWfE=s200-p-k" class="w3-center" alt="" style="width:60%">
             </div>
       </div>
-    
+  
+      <hr>
+  
       <!--  spa -->
-      <div class="middle-section" style="max-width:800px" id="spa">
-             <h2 class="inner-headline"> Q&A </h2>
-             <section id="spa" class="section">
-    
-              <h3>Three main differences between web 1.0, web 2.0 and web 3.0</h3>
-              <br/>
-              <table class="table-q">
-                <tr>
-                  <th>web 1.0</th>
-                  <th>web 2.0</th>
-                  <th>web 3.0</th>
-                </tr>
-                <tr>
-                  <td>Mostly read only</td>
-                  <td>Read and Write Web</td>
-                  <td>Read write and execute Web</td>
-                </tr>
-                <tr>
-                  <td>static content, one-way interaction</td>
-                  <td>conneting people through social networking like facebook and twitter</td>
-                  <td>connecting knowledge</td>
-                </tr>
-                <tr>
-                  <td>Million of users</td>
-                  <td>Billion of users</td>
-                  <td>Trillions of users</td>
-                </tr>
-              </table>
-              <br/>
-              <br/>
-              <br/>
-              <h3 style="text-decoration: underline;">Example of use case</h3>
-              <br/>
-              <div class=q2></div>
-                <p><b>use case : I'll use the query "good restaurant"</b></p>
-                <p><b>web 1.0 :</b>The information may be inaccurate, the user need to enter a specific URL</p>
-                <p><b>web 2.0 :</b> We will get the search results from several sources by the right tags fot "good restaurants"</p>
-                <p><b>web 3.0 :</b> We will get more results with the help of AI algorithms, based on our history search, the user will get sites, videos and articales about restaurants</p>
-              </div>
-              <br/>
-              <br/>
-              </section>
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="spa">
+             <h2 class="w3-wide w3-center"> Q&A </h2>
+        <br>
+  <center><h2>Diffrences between WEB1.0/WEB 2.0/Web3.0</h2></center>
+  <table id="t01">
+    <tr>
+      <td width="25%"text-poition="center"><b >Web 1.0</b ></td>
+      <td width="25%"text-poition="center"><b > Web 2.0</b ></td>
+      <td width="25%"text-poition="center"><b >Web 3.0</b ></td>
+      <div text-poition="center"><td width="25%" ><b >סוג הרשת</b></td></div>
+    </tr>
+  
+    <tr>
+      <td width="25%" >&nbsp;Mostly Read-Only	</td>
+      <td width="25%">&nbsp; Wildly Read-Write	</td>
+      <td width="25%">&nbsp;  Portable and Personal</td>
+      <td width="25%">&nbsp;<b>-</b></td>
+    </tr>
+    <tr>
+      <td width="25%">&nbsp;Company Focus	</td>
+      <td width="25%">&nbsp;Community Focus	</td>
+  
+    <td width="25%">&nbsp;Individual Focus
+  </td>
+      <td width="25%"><b>&nbsp;-</b></td>
+  
+    </tr>
+    <tr>
+      <td width="25%">&nbsp;Web Forms	</td>
+    <td width="25%">&nbsp;Web Applications	</td>
+      <td width="25%">&nbsp;Smart Applications
+  </td>
+      <td width="25%"><b>&nbsp;-</b></td>
+  
+    </tr>
+  </table><br/>
       </div>
   
       <hr>
       
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div id="logo3">
-  <div id="inner-text2">CONTACT US</div>
-</div>
-</div>
-<br>
-
-<!-- Contact  -->
-<div id="contact">
-  <br/>
-  <p style="text-align:center">Leave us a comment <i class="fa fa-paper-plane"></i></p>
-  <form action="https://formsubmit.co/ofirmich@post.bgu.ac.il" method="POST">
-    <input type="text" placeholder="Name" required name="Name">
-    <input type="text" placeholder="example@domain.com" required name="example@domain.com">
-    <textarea id="text" name="Comment" placeholder="Hi! Leave Your Message Here" data-emoji-picker="true"></textarea>
-    <input type="reset" value="Reset">
-    <input type="submit" value="Send">
-
-  </form>
-  <br/>
- 
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
 </div>
 
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONTACT US</h3>
+  <p class="w3-center"><em>We'd love to be in touch!</em></p>
 
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Beit Hanan, Israel<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 03-9647415<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: rmsidi@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+<form action="mailto:ofirmichaely@gmail.com" method="post" enctype="text/plain">        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+                          <input class="w3-round-xxlarge w3-input w3-border"type="text" name="comment" placeholder="Leave Your Message Here"data-emoji-picker="true"><br>
+
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
 
 <!-- Footer -->
-<footer class="footer">
-  <a href="#logo" class="up"><i class="fa fa-arrow-up"></i> Lift me up</a>
-  <div class="numbers-text">
-    <a class=up href="https://www.linkedin.com/in/ofir-michaely-745437158/" ><i class="fa fa-linkedin"></i></a>
-    <a class=up href="https://github.com/ofirmich" ><i class="fa fa-github"></i></a>
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
 </footer>
  
@@ -315,45 +302,27 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
 }
-// // Change style of navbar on scroll
-// window.onscroll = function() {myFunction()};
-// function myFunction() {
-//     var navbar = document.getElementById("myNavbar");
-//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//         navbar.className = "w3-bar" + " nimate-top" + " w3-white";
-//     } else {
-//         navbar.className = navbar.className.replace(" e-top w3-white", "");
-//     }
-// }
-
 
 class EmojiPicker {
   constructor() {
@@ -1467,5 +1436,3 @@ module.exports = EmojiPicker;
   </script>
 </body>
 </html>
-
-
