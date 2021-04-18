@@ -1,7 +1,7 @@
 
 body{
   height: 100%;
-  color:  rgb(54, 54, 54);
+  color:  rgb(78, 78, 78);
   background-color: rgb(236, 236, 236);
   text-align: center;
     padding:0;
@@ -42,8 +42,7 @@ body{
 
     .inner-headline{
       font-family: "Inconsolata", sans-serif;
-      font-size: 30px;
-      text-decoration: underline;
+      font-size: 26px;
     }
 
   .middle-section{
@@ -186,27 +185,13 @@ li a {
 
   .inner-text{
     position:absolute;
-    top:100%;
+    top:92%;
     left:70%;
     transform:translate(-50%,-50%);
     -ms-transform:translate(-50%,-50%);
     color: rgb(0, 0, 0);
     padding: 16px 18px;
-    text-align: center;	
-    background-color: #c2d4d4;
-    font-size: 22px;
-    border-radius: 10px 10px;
-    opacity: 0.99;
-  }
-
-  #inner-text2{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    -ms-transform:translate(-50%,-50%);
-    color: rgb(0, 0, 0);
-    padding: 16px 18px;
+    font-family: "Inconsolata", sans-serif;
     text-align: center;	
     background-color: #c2d4d4;
     font-size: 22px;
@@ -219,10 +204,6 @@ li a {
     transition-duration: 0.4s;
   }
 
-  #inner-text2:hover{
-      opacity: 0;
-    transition-duration: 0.4s;
-  }
 
   form {
     width: 50%;
@@ -447,8 +428,6 @@ footer{
 	color:	#e2e0dc;
 	background-color:inherit;
 }
-
-
 
 .up:hover
 {

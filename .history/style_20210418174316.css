@@ -186,12 +186,13 @@ li a {
 
   .inner-text{
     position:absolute;
-    top:100%;
+    top:92%;
     left:70%;
     transform:translate(-50%,-50%);
     -ms-transform:translate(-50%,-50%);
     color: rgb(0, 0, 0);
     padding: 16px 18px;
+    font-family: "Inconsolata", sans-serif;
     text-align: center;	
     background-color: #c2d4d4;
     font-size: 22px;
@@ -199,14 +200,15 @@ li a {
     opacity: 0.99;
   }
 
-  #inner-text2{
+  .inner-text2{
     position:absolute;
-    top:50%;
-    left:50%;
+    top:92%;
+    left:70%;
     transform:translate(-50%,-50%);
     -ms-transform:translate(-50%,-50%);
     color: rgb(0, 0, 0);
     padding: 16px 18px;
+    font-family: "Inconsolata", sans-serif;
     text-align: center;	
     background-color: #c2d4d4;
     font-size: 22px;
@@ -219,10 +221,6 @@ li a {
     transition-duration: 0.4s;
   }
 
-  #inner-text2:hover{
-      opacity: 0;
-    transition-duration: 0.4s;
-  }
 
   form {
     width: 50%;
