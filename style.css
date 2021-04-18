@@ -133,10 +133,7 @@ li a {
     right: 50%;
     width: 800px;
     height: 50px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
   }
 
   #logo{
@@ -284,7 +281,7 @@ input[type="reset"], [type="submit"]
 	border-style:hidden;
 	background-color: black;
 	color: white;
-  font-family: "Inconsolata", sans-serif;
+
 
 }
 
@@ -292,7 +289,7 @@ input[type="reset"]:hover, [type="submit"]:hover
 {
   
 	background-color:rgb(200, 215, 224) ;
-  color:rgb(0, 0, 0)!important;
+  color:rgb(0, 0, 0);
 	border-radius: 10px;
 	transition: 0.3s;
 	padding: 12px 12px;
@@ -410,7 +407,7 @@ footer{
  }
 
 
-.up
+.button-up
 {
 	border:none;
 	display:inline-block;
@@ -425,18 +422,18 @@ footer{
 	text-align:center;
 	cursor:pointer;
 	white-space:nowrap;
-	color:	#e2e0dc;
-	background-color:inherit;
+	color:	#eeeeee;
   transition-duration: 0.5s;
 
 }
 
-.up2
+.links
 {
 	border:none;
 	display:inline-block;
   float: right;
-	padding:15px 15px;
+  top: 2px;
+	padding:14px 14px;
 	vertical-align:middle;
 	overflow:hidden;
 	text-decoration:none;
@@ -444,13 +441,13 @@ footer{
 	text-align:center;
 	cursor:pointer;
 	white-space:nowrap;
-	color:	#e2e0dc;
+	color:	#eeeeee;
 	background-color:inherit;
 }
 
 
 
-.up:hover
+.button-up:hover
 {
 	color:rgb(0, 0, 0);
 	background-color:#e2e0dc;
@@ -459,10 +456,10 @@ footer{
 
 }
 
-.up2:hover
+.links:hover
 {
 	color:rgb(0, 0, 0)!important;
-	background-color:#e2e0dc!important;
+	background-color:#e2e0dc;
 	border-radius: 18px;
   transition-duration: 0.6s;
 
