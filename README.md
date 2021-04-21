@@ -8,4 +8,4 @@ Added to my website:
 * Back to top button at the end, with links to my linkedin and github.
 * uniqe sildeshow images
 * using css and javascript elements for styling (hover, active, animation)
-* conncting contact form directly to my personal email
+* connecting contact's form directly to my personal email
